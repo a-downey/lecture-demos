@@ -27,18 +27,15 @@ else:
     sys.exit(0)
 
 TOTAL = DIM_X * DIM_Y # DO NOT CHANGE!!!
-SAMPLE_MAX=9999
+SAMPLE_MAX=7777
 
-FILE_NAME="numbers.csv"
+FILE_NAME="numbers.txt"
 
 # write to file
 with open(FILE_NAME, 'w') as f:
     for x in rg(DIM_X):
         for y in rg(DIM_Y):
             next_int = r.randint(0,SAMPLE_MAX)
-            f.write("%d" % next_int)
-
-            if y< DIM_Y-1
-            	f.write(",")
+            f.write("%d " % next_int)
 
         f.write("\n")
